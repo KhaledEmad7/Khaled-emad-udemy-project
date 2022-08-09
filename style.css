@@ -278,6 +278,10 @@ input{
     justify-content: space-between;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.courses-container:hover{
+    cursor: pointer;
+}
+
 .cap1{
     font-weight: bold;
 }
