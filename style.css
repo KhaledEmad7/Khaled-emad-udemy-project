@@ -158,39 +158,12 @@ input{
 }
 
 
-@media (max-width: 800px) {
-    .earth-wrapper, .login, .signup{
-        display: none;
-    }
-    .search, .par{
-        display: none;
-    }
-    
-    .end{
-        display:block;
-        margin: auto 0 auto 2% ;
-    }
-    .micro2{
-        height: 40px;
-        width: auto;
-    }
-    .logo{
-        margin: auto 0 auto 20%;
-    }
-    .courses-container{
-        flex-wrap: wrap ;
-        overflow-wrap: normal;
-    }
-
-}
 
 .container{
-    height: 400px;
+    height: auto;
     width: 80%;
-    margin: 0 auto 0 9%;
+    margin: 70px auto auto 9%;
     background-color: grey;
-    position: relative;
-    top: 65px;
     z-index: -1;
     color: #1c1d1f;
     background-color: rgba(0,0,0,.04);
@@ -200,12 +173,15 @@ input{
 .quote{
     background-color: white;
     width: 35%;
-    height: 150px;
+    height: auto;
     margin: 5% auto auto 10%;
     box-shadow: 0px -5px 21px -5px black;
     padding-left: 1%;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+    display: inline-block;
+    overflow: hidden;
+    word-break: keep-all;
 }
 
 .cont-image{
@@ -219,15 +195,14 @@ input{
 
 .info{
     width: 80%;
-    margin: 5% auto auto 10%;
-    position: relative;
-    top: 25px;
+    margin: auto auto auto 10%;
+    margin-top: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
 }
 
 .courses{
-    height: 600px;
+    height: auto;
     width: 78%;
     margin: 2% auto 10% 10%;
     position: relative;
@@ -273,11 +248,19 @@ input{
     color: black;
 }
 .courses-container{
-    height: 405px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
 }
+
+
+.course-img{
+    height: 40%;
+    width: auto;
+}
+
 .courses-container:hover{
     cursor: pointer;
 }
@@ -291,7 +274,36 @@ input{
 }
 
 
-.course-img{
-    height: 40%;
-    width: auto;
+
+
+@media (max-width: 800px) {
+    .earth-wrapper, .login, .signup{
+        display: none;
+    }
+    .search, .par{
+        display: none;
+    }
+    
+    .end{
+        display:block;
+        margin: auto 0 auto 2% ;
+    }
+    .micro2{
+        height: 40px;
+        width: auto;
+        cursor: pointer;
+    }
+    .logo{
+        margin: auto 0 auto 20%;
+    }
+    .courses-container{
+        flex-wrap: wrap ;
+        overflow-wrap: normal;
+    }
+}
+
+@media (max-width: 654px) {
+    .quote{
+        display: none;
+    }
 }
