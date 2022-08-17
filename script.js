@@ -1,13 +1,22 @@
+let courses = []
+let filter = ""
+
 fetch("http://localhost:3000/body")
   .then((res) => res.json())
   .then((data) => {
     addCourses(data)
   })
   .catch((err) => console.log(err));
-
-
+  
+  
 let addCourses = (data) => {
-    let courses = data.courses
+    courses = []
+    filter = input.value;
+    data.courses.forEach((course) => {
+        if (course.title.toLowerCase().includes(filter.toLocaleLowerCase())) {
+            courses.push(course);
+        }
+    });
     let container = document.querySelector(".courses-container")
     courses.forEach((course) => {
         container.innerHTML += `
@@ -29,3 +38,10 @@ let addCourses = (data) => {
         `
     });
 };
+
+let input = document.querySelector("input");
+input.addEventListener("keyup", (e) => {
+    filter = e.target.value;
+    applyCourse();
+    e.preventDefault();
+});
