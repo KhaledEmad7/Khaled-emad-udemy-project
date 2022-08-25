@@ -373,3 +373,27 @@ input{
 .carousel-control-next{
     right: 0;
 }
+
+.top-cat-container{
+    padding: 0 10%;
+}
+
+.top-cat-container img{
+    width: 95%;
+    cursor: pointer;
+}
+  
+.top-cat-container span:hover img{
+    transform: scale(1.05);
+    transition: transform 150ms cubic-bezier(0, 0, 0.38, 0.9);
+}
+
+
+.top-cat-container p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    color: black;
+}
+

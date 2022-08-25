@@ -99,8 +99,6 @@ let onChangeCourse = (event) => {
 for(let event of clicked) {
     event.addEventListener("click", onChangeCourse);
 }
-  
-
 
 const search_bar = document.querySelector("input");
 search_bar.addEventListener("keyup", (e) => {
