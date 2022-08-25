@@ -252,13 +252,19 @@ input{
     display: flex;
     justify-content: space-between;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-flow: wrap;
+    flex-shrink: 0;
     flex-wrap: wrap;
 }
 
+.img-container{
+    width: 300px;
+    height: auto;
+}
 
 .course-img{
-    height: 40%;
-    width: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
 .courses-container:hover{
