@@ -1,0 +1,19 @@
+{
+  "name": "task-3",
+  "version": "1.0.0",
+  "description": "Steps for running the code\r ```bash\r   npm install -g json-server\r ```\r ```bash\r   json-server --watch data/db.json \r ```",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaledEmad7/bld-udemy-phase1.git"
+  },
+  "author": "Khaled Emad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhaledEmad7/bld-udemy-phase1/issues"
+  },
+  "homepage": "https://github.com/KhaledEmad7/bld-udemy-phase1#readme"
+}
